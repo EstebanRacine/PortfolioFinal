@@ -11,7 +11,7 @@ nav{
     height: 15vh;
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 20vw repeat(4, 1fr);
+    grid-template-columns: 20vw repeat(5, 1fr);
     background-color: #3e726a;
     font-family: 'Montserrat', sans-serif;
     position: fixed;
@@ -20,15 +20,38 @@ nav{
 
 nav a{
     width: max-content;
-    height: max-content;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     align-self: center;
     justify-self: center;
     color: #ffe7d4;
     text-decoration: none;
     font-size: 1.4em;
+    transition: 0.5s all;
     font-weight: bold;
 }
 
-.underline{
+#navImg{
+    height: 100%;
+    width: 100%;
+}
 
+nav img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+nav a:hover{
+    scale: 1.15;
+}
+
+nav #navImg:hover{
+    scale: 1;
+}
+
+.underline{
+    border-bottom: 4px solid #ffe7d4;
 }
