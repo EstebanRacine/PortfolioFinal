@@ -4,6 +4,17 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #3e726a;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
 /*HEADER*/
 
 nav{
@@ -15,6 +26,8 @@ nav{
     background-color: #3e726a;
     font-family: 'Montserrat', sans-serif;
     position: fixed;
+    z-index: 100;
+
 
 }
 
@@ -29,7 +42,7 @@ nav a{
     color: #ffe7d4;
     text-decoration: none;
     font-size: 1.4em;
-    transition: 0.5s all;
+    transition: 0.5s scale;
     font-weight: bold;
 }
 
@@ -41,7 +54,7 @@ nav a{
 nav img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 nav a:hover{
@@ -66,11 +79,27 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3e726a;
+    background-color: #2c554f;
     color: #ffe7d4;
+    margin-top: 30px;
 }
 
 .reseaux{
-    display: grid;
+    display: flex;
+    flex-direction: row;
+}
+
+.reseaux a{
+    color: #ffe7d4;
+    font-size: 2em;
+    padding: 0 5px;
+    transition: color 0.25s;
+}
+
+.reseaux a:hover{
+    color: #77c2b8;
+}
+
+@media screen and (max-width: 800px){
 
 }
