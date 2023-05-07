@@ -55,3 +55,22 @@ nav #navImg:hover{
 .underline{
     border-bottom: 4px solid #ffe7d4;
 }
+
+
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3e726a;
+    color: #ffe7d4;
+}
+
+.reseaux{
+    display: grid;
+
+}
