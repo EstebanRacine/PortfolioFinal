@@ -17,8 +17,13 @@ body{
 
 /*HEADER*/
 
+.imgHeader{
+    display: none;
+}
+
 nav{
     width: 100%;
+    top: 0;
     height: 15vh;
     display: grid;
     grid-template-rows: 100%;
@@ -26,7 +31,7 @@ nav{
     background-color: #3e726a;
     font-family: 'Montserrat', sans-serif;
     position: fixed;
-    z-index: 100;
+    z-index: 10;
 
 
 }
@@ -69,7 +74,9 @@ nav #navImg:hover{
     border-bottom: 4px solid #ffe7d4;
 }
 
-
+#iconeMenu{
+    display: none;
+}
 
 /*FOOTER*/
 
@@ -101,5 +108,42 @@ footer{
 }
 
 @media screen and (max-width: 800px){
+    header{
+        height: 15vh;
+        display: flex;
+    }
+    .imgHeader{
+        display: block;
+        margin: auto;
+        width: 75vw;
+        justify-self: center;
+    }
+
+    #iconeMenu{
+        display: block;
+        position: absolute;
+        z-index: 11;
+        color: #ffe7d4;
+        font-size: 2.5em;
+        right: 7.5vw;
+        top: 12.5vw;
+    }
+
+    nav{
+        height: 100vh;
+        /*display: none;*/
+        margin-top: -100vh;
+        width: 100vw;
+        position: absolute;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: 1fr;
+        transition: all 0.5s;
+    }
+
+    #navImg{
+        width: 75vw;
+        align-self: center;
+        justify-self: center;
+    }
 
 }

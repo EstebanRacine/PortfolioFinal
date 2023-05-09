@@ -148,6 +148,10 @@ https://css-tricks.com/snippets/css/typewriter-effect/
     .infosPerso p{
         margin: 50px auto;
     }
+
+    .contenuIndex{
+        padding-top: 0;
+    }
 }
 
 @media screen and (max-width: 500px){
