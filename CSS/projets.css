@@ -1,0 +1,38 @@
+.contenuProjet{
+    padding-top: 15vh;
+    color: #ffe7d4;
+    font-family: "Montserrat", sans-serif;
+    min-height: 84vh;
+}
+
+.carroussel{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+article{
+    width: 90vw;
+    color: black;
+    height: 70vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.85;
+}
+
+article > *{
+    opacity: 1;
+    color: red;
+}
+
+#Carottos{
+    background-image: url("../images/projets/Carottos/index.png");
+}
+
+#ETC{
+    background-image: url("../images/projets/ETC/index.png");
+}
+
+#BestStudents{
+    background-image: url("../images/projets/BestStudents/index.PNG");
+}
