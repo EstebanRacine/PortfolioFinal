@@ -97,6 +97,7 @@ https://css-tricks.com/snippets/css/typewriter-effect/
     position: absolute;
     font-size: 3.5em;
     width: 100%;
+    cursor: pointer;
     text-align: center;
     animation: upDown 5s infinite ease-in-out;
     bottom: 35px;
