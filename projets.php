@@ -26,18 +26,24 @@ include "FichiersCommuns/header.php";
     <div class="carroussel">
 
         <article id="ETC">
-            <h2>ETC (Enroule Ton Câble)</h2>
-            <a href="infoProj.php?projet=ETC">+ d'infos</a>
+            <div class="contenuArticle">
+                <h2>ETC (Enroule Ton Câble)</h2>
+                <a href="infoProj.php?projet=ETC">+ d'infos</a>
+            </div>
         </article>
 
         <article id="BestStudents">
-            <h2>BestStudents</h2>
-            <a href="infoProj.php?projet=BestStudents">+ d'infos</a>
+            <div class="contenuArticle">
+                <h2>BestStudents</h2>
+                <a href="infoProj.php?projet=BestStudents">+ d'infos</a>
+            </div>
         </article>
 
         <article id="Carottos">
-            <h2>Carottos</h2>
-            <a href="infoProj.php?projet=Carottos">+ d'infos</a>
+            <div class="contenuArticle">
+                <h2>Carottos</h2>
+                <a href="infoProj.php?projet=Carottos">+ d'infos</a>
+            </div>
         </article>
 
     </div>
