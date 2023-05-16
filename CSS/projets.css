@@ -70,7 +70,7 @@ article{
     padding: 10px 30px;
     text-decoration: none;
     font-weight: bold;
-    transition: scale 0.5s;
+    transition: all 0.5s;
 }
 
 .contenuArticle a:hover{
@@ -96,7 +96,7 @@ article{
 #ETC h2, #ETC a{
     background-color: #1c9aea;
     color: white;
-    border: 3px solid #1c9aea;
+    border: 3px solid white;
 }
 
 #BestStudents{
@@ -121,3 +121,62 @@ article{
     font-size: 2em;
 }
 
+@media screen and (max-width: 800px){
+    .contenuProjet{
+        padding-top: 2.5vh;
+    }
+
+    .contenuProjet h1{
+        font-size: 1.75em;
+    }
+
+    .carroussel{
+        width: 100%;
+    }
+
+    .slick-arrow{
+        width: max-content;
+        padding: 10px;
+        font-size: 1.25em;
+    }
+
+    #BestStudents{
+        background-image: url("../images/projets/BestStudents/indexPhone.PNG");
+    }
+
+    #ETC{
+        background-image: url("../images/projets/ETC/indexPhone.PNG");
+    }
+
+
+    .contenuArticle{
+        position: relative;
+    }
+
+    .contenuArticle h2{
+        width: 50vw;
+        text-align: center;
+        font-size: 1.25em;
+        padding: 10px;
+        margin-bottom: 10vh;
+    }
+
+    .contenuArticle a{
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        opacity: 1;
+        text-align: center;
+        border-bottom-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
+    #Carottos a, #BestStudents a, #ETC a{
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+        background-color: #ffe7d4;
+        color: #3e726a;
+        border-top: 5px solid #3e726a;
+    }
+
+}
