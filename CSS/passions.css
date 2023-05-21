@@ -12,7 +12,8 @@
 
 .gamesDiv, .musicDiv, .theatreDiv{
     width: 99vw;
-    height: 60vh;
+    /*height: 60vh;*/
+    height: max-content;
     margin-right: auto;
     margin-left: auto;
     -webkit-transition: background 1s;
@@ -66,8 +67,8 @@
     width: 75%;
     text-align: justify;
     color: #ffe7d4;
-    padding: 50px;
-    height: 85%;
+    padding: 50px 75px;
+    height: max-content;
     text-indent: 1cm;
     align-self: center;
     justify-self: center;
@@ -77,4 +78,27 @@
     justify-content: center;
     align-items: center;
     border: #2e564f 4px solid;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-bottom: 1cm;
+    margin-top: 1cm;
+}
+
+@media screen and (max-width: 900px){
+
+    .contenuObjetPassion p{
+        grid-column: 1/-1;
+        width: 80%;
+        padding: 25px 20px;
+    }
+
+    .contenuPassions{
+        padding-top: 15px;
+    }
+
+    .contenuPassions h1{
+        font-size: 1.9em;
+        padding: 0;
+    }
+
 }
