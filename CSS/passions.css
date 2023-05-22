@@ -92,13 +92,15 @@
         padding: 25px 20px;
     }
 
-    .contenuPassions{
-        padding-top: 15px;
-    }
-
     .contenuPassions h1{
         font-size: 1.9em;
         padding: 0;
     }
 
+}
+
+@media screen and (max-width: 800px){
+    .contenuPassions{
+        padding-top: 15px;
+    }
 }
