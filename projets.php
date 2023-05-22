@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/projets.css">
+    <link rel="shortcut icon" href="images/LogoOnglet.png" />
     <title>Mes projets</title>
 </head>
 <body>
