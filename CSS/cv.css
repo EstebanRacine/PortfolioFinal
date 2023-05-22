@@ -1,0 +1,197 @@
+.contenuCV{
+    padding-top: 15vh;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.75fr 1fr;
+    grid-template-rows: max-content max-content;
+    font-family: Montserrat, sans-serif;
+    color: #ffe7d4;
+}
+
+.contenuCV > h1{
+    padding: 20px;
+    color: #ffe7d4;
+    text-align: center;
+    font-size: 2.75em;
+    grid-column: 1/-1;
+}
+
+.infosBases{
+    display: grid;
+    grid-template-rows: max-content max-content max-content max-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.infosBases > *{
+    padding: 30px 0;
+    width: 80%;
+    margin: auto;
+}
+
+.imgID{
+    border-bottom: #ffe7d4 7px solid;
+}
+
+.imgID img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.imgID h1{
+    text-decoration: underline 3px;
+    margin: 1cm 0;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.imgID h2{
+    width: 75%;
+    padding-bottom: 5px;
+    color: #fefefa;
+}
+
+#metier{
+    font-size: 1.5em;
+}
+
+#descrMetier{
+    font-size: 1em;
+}
+
+.descriptionID h3, .qualites h3, .coordonnees h3{
+    font-size: 1.5em;
+    padding-bottom: 15px;
+}
+
+.descriptionID p{
+    text-indent: 1cm;
+    color: #fefefa;
+    text-align: justify;
+    font-weight: 400;
+}
+
+
+.qualites ul{
+    padding-left: 0.75cm;
+}
+
+.qualites li{
+    padding: 5px;
+}
+
+.coordonnees ul, .qualites ul{
+    color: #fefefa;
+    font-weight: 400;
+}
+
+.ligne{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.coordonnees i{
+    padding-right: 25px;
+    font-size: 1.5em;
+    color: #ffe7d4;
+}
+
+.infosPlus{
+    background-color: #fefefa;
+    display: grid;
+    grid-template-rows: repeat(4, max-content);
+}
+
+.blocInfosPlus{
+    width: 70%;
+    margin: auto;
+    height: max-content;
+    padding: 15px 0;
+    color: #494e5f;
+}
+
+#expPro{
+    margin-top: 50px;
+}
+
+.blocInfosPlus h1{
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: #ffe7d4;
+    padding: 10px;
+}
+
+.contenuBloc{
+    width: 90%;
+    margin: auto;
+    padding: 10px 15px;
+}
+
+#blocHautExp, #blocHautForm{
+    padding-top: 25px;
+}
+
+.contenuBloc h2{
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.contenuBloc h3{
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.contenuBloc p{
+    padding: 10px;
+    text-align: justify;
+}
+
+.contenuBloc li{
+    width: 75%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+#textLoisir{
+    width: 100%;
+    text-indent: 1cm;
+}
+
+.contenuCV a{
+    padding: 10px 25px;
+    background-color: #ffe7d4;
+    color: #494e5f;
+    border: #494e5f solid 3px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 1cm auto 0.5cm;
+    width: max-content;
+    transition: all 0.5s;
+}
+
+.contenuCV a:hover{
+    scale: 1.1;
+}
+
+@media screen and (max-width: 1150px){
+    .contenuCV{
+        padding-top: 4vh;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content max-content max-content;
+    }
+
+    .blocInfosPlus{
+        width: 85%;
+    }
+
+    .contenuBloc{
+        width: 95%;
+    }
+}

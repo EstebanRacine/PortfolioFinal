@@ -121,11 +121,7 @@ article{
     font-size: 2em;
 }
 
-@media screen and (max-width: 800px){
-    .contenuProjet{
-        padding-top: 2.5vh;
-    }
-
+@media screen and (max-width: 900px){
     .contenuProjet h1{
         font-size: 1.75em;
     }
@@ -139,15 +135,6 @@ article{
         padding: 10px;
         font-size: 1.25em;
     }
-
-    #BestStudents{
-        background-image: url("../images/projets/BestStudents/indexPhone.PNG");
-    }
-
-    #ETC{
-        background-image: url("../images/projets/ETC/indexPhone.PNG");
-    }
-
 
     .contenuArticle{
         position: relative;
@@ -179,4 +166,18 @@ article{
         border-top: 5px solid #3e726a;
     }
 
+}
+
+@media screen and (max-width: 800px){
+    .contenuProjet{
+        padding-top: 2.5vh;
+    }
+
+    #BestStudents{
+        background-image: url("../images/projets/BestStudents/indexPhone.PNG");
+    }
+
+    #ETC{
+        background-image: url("../images/projets/ETC/indexPhone.PNG");
+    }
 }
