@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
             "content-type"=>"text/plain; charset=utf-8",
         ];
         $message = "Message de $prenom $nom : ".PHP_EOL.$message;
-        if(mail("esteban.racineecole@gmail.com", $objet, $message, $headers)) {
+        if(mail("contact@esteban-racine.fr", $objet, $message, $headers)) {
             $nom = null;
             $prenom = null;
             $mail = null;
