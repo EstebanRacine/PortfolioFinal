@@ -2,8 +2,63 @@
 
 $nom = null;
 $prenom = null;
+$mail = null;
 $objet = null;
 $message = null;
+
+if ($_SERVER['REQUEST_METHOD']=="POST") {
+
+    $erreurs = [];
+
+    if (empty(trim($_POST['nom']))) {
+        $erreurs['nom'] = "Veuillez remplir le champs Nom";
+    } else {
+        $nom = $_POST['nom'];
+    }
+
+    if (empty(trim($_POST['prenom']))) {
+        $erreurs['prenom'] = "Veuillez remplir le champs Prénom";
+    } else {
+        $prenom = $_POST['prenom'];
+    }
+
+    if (empty(trim($_POST['mail']))) {
+        $erreurs['mail'] = "Veuillez remplir le champs Mail";
+    } else {
+        $mail = $_POST['mail'];
+    }
+
+    if (empty(trim($_POST['objet']))) {
+        $erreurs['objet'] = "Veuillez remplir le champs Objet";
+    } else {
+        $objet = $_POST['objet'];
+    }
+
+    if (empty(trim($_POST['message']))) {
+        $erreurs['message'] = "Veuillez écrire un message";
+    } else {
+        $message = $_POST['message'];
+    }
+
+    if (empty($erreurs)){
+        $headers = [
+            "From"=>$mail,
+            "content-type"=>"text/plain; charset=utf-8",
+        ];
+        $message = "Message de $prenom $nom : ".PHP_EOL.$message;
+        if(mail("esteban.racineecole@gmail.com", $objet, $message, $headers)) {
+            $nom = null;
+            $prenom = null;
+            $mail = null;
+            $objet = null;
+            $message = null;
+            echo "<script> window.alert('Votre message a bien été envoyé') </script>";
+        }else{
+            echo "<script> window.alert(\"Erreur lors de l'envoi, veuillez recommencer\") </script>";
+        }
+    }
+
+}
 
 ?>
 
@@ -31,21 +86,58 @@ include "FichiersCommuns/header.php";
         <div class="infosPerso">
             <a href="tel:0631687017"> <i class="fa-solid fa-phone"></i> 06 31 68 70 17</a>
             <a href="mailto:esteban.racineecole@gmail.com"><i class="fa-solid fa-envelope"></i> esteban.racineecole@gmail.com</a>
-            <p> <i class="fa-solid fa-house"></i> 13 rue du Muguet, Apt 24 <br> Besançon 25000</p>
+            <p> <i class="fa-solid fa-house"></i> 13 rue du Muguet, Apt 24</p>
+            <p>Besançon 25000</p>
         </div>
         <img src="images/contact/imgContact.jpg" alt="Image de clavier rétroéclairé.">
     </div>
-    <h2>Formulaire de contact</h2>
+    <h1 id="nameFormu">Formulaire de contact</h1>
     <form action="" method="post">
-        <label for="Nom">Nom</label>
+        <label for="Nom">Nom <span class="Rouge">*</span></label>
         <input type="text" value="<?= $nom ?>" name="nom" id="nom">
-        <label for="prenom">Prénom</label>
+        <?php
+        if (isset($erreurs['nom'])){
+            echo "<h3 class='Rouge'>{$erreurs['nom']}</h3>";
+        }
+        ?>
+
+        <label for="prenom">Prénom <span class="Rouge">*</span></label>
         <input type="text" value="<?= $prenom ?>" name="prenom" id="prenom">
-        <label for="objet">Objet</label>
+        <?php
+        if (isset($erreurs['prenom'])){
+            echo "<h3 class='Rouge'>{$erreurs['prenom']}</h3>";
+        }
+        ?>
+
+        <label for="mail">Email <span class="Rouge">*</span></label>
+        <input type="text" value="<?= $mail ?>" name="mail" id="mail">
+        <?php
+        if (isset($erreurs['mail'])){
+            echo "<h3 class='Rouge'>{$erreurs['mail']}</h3>";
+        }
+        ?>
+
+
+        <label for="objet">Objet <span class="Rouge">*</span></label>
         <input type="text" value="<?= $objet ?>" id="objet" name="objet">
-        <label for="message">Votre message</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
-        <button type="submit">Envoyer</button>
+        <?php
+        if (isset($erreurs['objet'])){
+            echo "<h3 class='Rouge'>{$erreurs['objet']}</h3>";
+        }
+        ?>
+
+
+        <label for="message">Votre message <span class="Rouge">*</span></label>
+        <textarea name="message" id="message" cols="30" rows="10"><?= $message ?></textarea>
+        <?php
+        if (isset($erreurs['message'])){
+            echo "<h3 class='Rouge'>{$erreurs['message']}</h3>";
+        }
+        ?>
+
+
+        <button id="buttonSend" type="submit">Envoyer</button>
+        <p class="Rouge" id="infoAsterisque">* : champs obligatoires</p>
     </form>
 </div>
 
