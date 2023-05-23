@@ -87,6 +87,27 @@
 }
 
 
+#lienExterne{
+    padding: 7px 15px;
+    border-radius: 10px;
+    color: #494e5f;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.5s;
+}
+
+#lienExterne:hover{
+    scale: 1.2;
+}
+
+#nonPub{
+    margin-top: 15px;
+    font-weight: 600;
+    width: max-content;
+    text-indent: 0;
+}
+
 .images{
     border-left: 5px solid #ffe7d4;
     padding-left: 2cm;

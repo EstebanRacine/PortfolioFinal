@@ -5,12 +5,12 @@ $imgCarottos = "images/projets/Carottos/";
 
 $ETC = ["nom"=>"ETC", "annee"=>2023, "logo"=>"images/projets/ETC/logo.png", "descr"=>"ETC (Enroule Ton câble) est une micro entreprise 
 crée par le BTS GPME du lycée Louis Pergaud. Ce site sert de vitrine pour leur produit et permet de présenter l'envers du décor et les collaborateurs.",
-    "img"=>[$imgETC."index2.PNG", $imgETC."produit.PNG", $imgETC."quiSommesNous.PNG", $imgETC."contact.PNG"], "lien"=>"enrouletoncable.fr"];
+    "img"=>[$imgETC."index2.PNG", $imgETC."produit.PNG", $imgETC."quiSommesNous.PNG", $imgETC."contact.PNG"], "lien"=>"https://enrouletoncable.fr"];
 
 $BestStudents = ["nom"=>"BestStudents", "annee"=>2022, "logo"=>$imgBS."logo.png", "descr"=>"BestStudents est un projet crée au cours 
 de ma première année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves 
 par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
-    "img"=>[$imgBS."index2.png", $imgBS."ajoutEtudiant.png" ,$imgBS."gestionDemandes.PNG", $imgBS."contact.png"], "lien"=>"Projet non publié"];
+    "img"=>[$imgBS."index2.png", $imgBS."ajoutEtudiant.png" ,$imgBS."gestionDemandes.PNG", $imgBS."contact.png"]];
 
 $Carottos = ["nom"=>"Carottos", "annee"=>2023, "logo"=>$imgCarottos."logo.png", "descr"=>"Carottos est une entreprise crée de toute pièce 
 afin de s'entrainer à gérer des sessions, des paniers et des commandes le tout enregistré dans une base de donnée. J'ai commencer à approcher pour 
@@ -54,6 +54,14 @@ include "FichiersCommuns/header.php";
         <img src="<?= $actuel["logo"] ?>" alt="Logo de <?= $actuel["nom"] ?>">
         <h3><?= $actuel["annee"] ?></h3>
         <p><?= $actuel["descr"] ?></p>
+        <?php
+        if (isset($actuel['lien'])){
+            $ligne = "<a target='_blank' class='".$actuel["nom"]."' id='lienExterne' href='".$actuel["lien"]."'>Voir le site</a>";
+            echo $ligne;
+        }else{
+            echo "<p id='nonPub'>Projet non publié</p>";
+        }
+        ?>
     </div>
     <div class="images">
         <img id="imgPrincipale" src="<?= $actuel["img"][0] ?>" alt="Image principale">
