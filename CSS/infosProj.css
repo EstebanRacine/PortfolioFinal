@@ -1,0 +1,118 @@
+.Carottos{
+    color: #f4900c;
+    background-color: gray;
+    border: 3px solid #77b255;
+}
+
+.Carottos:first-letter{
+    color: #77b255;
+}
+
+.BestStudents{
+    color: gold;
+    background-color: black;
+    border: 3px solid gold;
+}
+
+.ETC{
+    color: #1c9aea;
+    border: 3px solid #1c9aea;
+    background-image: repeating-linear-gradient(45deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(135deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(256,7%,84%),hsl(256,7%,84%));
+}
+
+.contenuInfosProj{
+    min-height: 85vh;
+    width: 80%;
+    margin: auto;
+    padding-top: 15vh;
+    font-family: Montserrat, sans-serif;
+    color: #ffe7d4;
+    display: grid;
+    grid-template-rows: max-content max-content;
+    grid-template-columns: 50% 50%;
+}
+
+.contenuInfosProj h1{
+    position: relative;
+    grid-column: 1/-1;
+    margin: 50px auto;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+#flecheRetour{
+    position: absolute;
+    font-size: 1.2em;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    top: 0;
+    left: -10vw;
+    transition: all 0.5s;
+}
+
+#flecheRetour:hover{
+   transform: rotate(360deg);
+}
+
+.infosProj{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infosProj img{
+    height: 15vh;
+    /*margin: 20px;*/
+    align-self: center;
+}
+
+.infosProj h3{
+    padding: 15px;
+    /*text-indent: 1cm;*/
+}
+
+.infosProj p{
+    text-align: justify;
+    width: 85%;
+    text-indent: 1cm;
+}
+
+
+.images{
+    border-left: 5px solid #ffe7d4;
+    padding-left: 2cm;
+}
+
+#imgPrincipale{
+    width: 100%;
+    animation: all 0.5s;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.gridImages{
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    width: 65%;
+    margin: auto;
+}
+
+.gridImages img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

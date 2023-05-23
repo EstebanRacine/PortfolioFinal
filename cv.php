@@ -31,7 +31,7 @@ include "FichiersCommuns/header.php";
         </div>
         <div class="descriptionID">
             <h3>PROFIL PERSONNEL</h3>
-            <p>Je suis actuellement un étudiant de 18 ans 1ère année de BTS SIO (Services Informatiques aux Organisations)
+            <p>Je suis actuellement un étudiant de 18 ans en 1ère année de BTS SIO (Services Informatiques aux Organisations)
              au lycée Louis Pergaud de Besançon. Je souhaite devenir développeur web et cherche à m'améliorer continuellement.</p>
         </div>
         <div class="qualites">
@@ -59,7 +59,7 @@ include "FichiersCommuns/header.php";
             <h1>EXPÉRIENCE PROFESSIONNELLE</h1>
             <div class="contenuBloc" id="blocHautExp">
                 <h2>Stage d'observation</h2>
-                <h3>à INFOFIL</h3>
+                <h3>à INFOFIL (2019)</h3>
                 <p> - Stage de 3 jours dans une entreprise de développement de logiciel. J'y ai découvert le secteur
                 informatique. J'ai commencé à coder de petits logiciels à sa suite.</p>
             </div>
