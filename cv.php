@@ -21,7 +21,7 @@ include "FichiersCommuns/header.php";
 ?>
 
 <div class="contenuCV">
-    <h1>MON CV</h1>
+    <h1>Mon CV</h1>
     <div class="infosBases">
         <div class="imgID">
             <img src="images/cv/imgCV.jpg" alt="Image d'Esteban RACINE">
