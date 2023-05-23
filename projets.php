@@ -1,4 +1,9 @@
 <?php
+
+$projetsPortfolio = [["nom"=>"ETC", "logo"=>"images/projets/ETC/logo.png", "annee"=>2023],
+    ["nom"=>"BestStudents", "logo"=>"images/projets/BestStudents/logo.png", "annee"=>2022],
+    ["nom"=>"Carottos", "logo"=>"images/projets/Carottos/logo2.png", "annee"=>2023]];
+
 ?>
 
 <!doctype html>
@@ -50,6 +55,24 @@ include "FichiersCommuns/header.php";
     </div>
 
 <!--    AJOUTER CARD PROJETS-->
+    <div class="divCard">
+        <?php
+        foreach ($projetsPortfolio as $projet){
+        ?>
+
+            <div class="card">
+                <img src="<?= $projet['logo'] ?>" alt="Logo de <?= $projet['nom']?>">
+                <h3><?= $projet['annee'] ?></h3>
+                <h1> <?= $projet['nom']?></h1>
+                <a class="lienInfosProj" href="infoProj.php?projet=<?= $projet['nom'] ?>"> Voir plus </a>
+            </div>
+
+
+        <?php
+        }
+        ?>
+
+    </div>
 
 </div>
 
