@@ -9,10 +9,26 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="shortcut icon" href="images/LogoOnglet.png" />
-    <title>Accueil</title>
+    <title>Esteban Racine - Accueil</title>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DGNMBFFVZ2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DGNMBFFVZ2');
+</script>
+
 <body>
 
 <?php
@@ -22,13 +38,13 @@ include "FichiersCommuns/header.php"
 <div class="contenuIndex">
     <div class="pres1">
         <div class="textEcrit">
-            <h1 id="h1Start">Bienvenue</h1>
+            <h2 id="h1Start">Bienvenue</h2>
         </div>
         <div class="textEcrit">
-            <h1 id="h1Middle">sur le portfolio</h1>
+            <h2 id="h1Middle">sur le portfolio</h2>
         </div>
         <div class="textEcrit">
-            <h1 id="h1End">d'Esteban Racine</h1>
+            <h2 id="h1End">d'Esteban Racine</h2>
         </div>
         <i class="fa-solid fa-arrow-down" onclick="window.scrollBy(0, window.innerHeight);"></i>
 
@@ -36,7 +52,7 @@ include "FichiersCommuns/header.php"
     <div class="quiSuisJe">
         <h1>Qui Suis-je ?</h1>
         <div class="infosPerso">
-            <img src="images/index/moi.jpg" alt="Image d'Esteban Racine">
+            <img src="images/index/moi2.jpg" alt="Image d'Esteban Racine">
             <p>
                 Je suis Esteban RACINE, étudiant en BTS SIO au lycée Louis Pergaud. Je me suis toujours
                 interessé au fonctionnement des objets. À leurs conceptions, à leurs utilisations ou encore

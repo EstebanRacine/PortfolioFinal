@@ -2,7 +2,8 @@
 
 $projetsPortfolio = [["nom"=>"ETC", "logo"=>"images/projets/ETC/logo.png", "annee"=>2023],
     ["nom"=>"BestStudents", "logo"=>"images/projets/BestStudents/logo.png", "annee"=>2022],
-    ["nom"=>"Carottos", "logo"=>"images/projets/Carottos/logo2.png", "annee"=>2023]];
+    ["nom"=>"Carottos", "logo"=>"images/projets/Carottos/logo2.png", "annee"=>2023],
+    ["nom"=>"Iron", "logo"=>"images/projets/Iron/logo.png", "annee"=>2023]];
 
 ?>
 
@@ -20,6 +21,17 @@ $projetsPortfolio = [["nom"=>"ETC", "logo"=>"images/projets/ETC/logo.png", "anne
     <link rel="shortcut icon" href="images/LogoOnglet.png" />
     <title>Mes projets</title>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DGNMBFFVZ2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DGNMBFFVZ2');
+</script>
+
 <body>
 
 <?php
@@ -52,13 +64,19 @@ include "FichiersCommuns/header.php";
             </div>
         </article>
 
+        <article id="Iron">
+            <div class="contenuArticle">
+                <h2>Iron</h2>
+                <a href="infoProj.php?projet=Iron">+ d'infos</a>
+            </div>
+        </article>
     </div>
 
-<!--    AJOUTER CARD PROJETS-->
+    <!--    AJOUTER CARD PROJETS-->
     <div class="divCard">
         <?php
         foreach ($projetsPortfolio as $projet){
-        ?>
+            ?>
 
             <div class="card">
                 <img src="<?= $projet['logo'] ?>" alt="Logo de <?= $projet['nom']?>">
@@ -68,7 +86,7 @@ include "FichiersCommuns/header.php";
             </div>
 
 
-        <?php
+            <?php
         }
         ?>
 

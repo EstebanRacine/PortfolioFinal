@@ -75,6 +75,17 @@ if ($_SERVER['REQUEST_METHOD']=="POST") {
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Contact</title>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DGNMBFFVZ2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DGNMBFFVZ2');
+</script>
+
 <body>
 <?php
 include "FichiersCommuns/header.php";

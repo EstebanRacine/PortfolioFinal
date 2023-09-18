@@ -20,7 +20,7 @@ const apparitionMenu = () => {
 }
 
 const modifSizeNav = () =>{
-    if (window.innerWidth >= 800  && btnIcon.style.color === "#1c9aea"){
+    if (window.innerWidth >= 900 && btnIcon.style.color === "#1c9aea"){
         console.log(36);
         nav.style.marginLeft = "0";
     }

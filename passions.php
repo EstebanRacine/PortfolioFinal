@@ -15,6 +15,17 @@
     <link rel="shortcut icon" href="images/LogoOnglet.png" />
     <title>Mes passions</title>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DGNMBFFVZ2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DGNMBFFVZ2');
+</script>
+
 <body>
 <?php
 include "FichiersCommuns/header.php";
@@ -25,7 +36,7 @@ include "FichiersCommuns/header.php";
     <div class="musicDiv" id="musicDiv">
         <div class="contenuObjetPassion">
             <h2>La Musique</h2>
-            <p>J'ai toujours aimé la musique, c'est une grande partie de ma vie. J'adore l'effet qu'elle peut avoir sur l'homme, sur ses sentiments ou ses décisions. La musique peut être entrainante comme incroyablement triste et c'est cette diversité des genres et d'émotions qui en font quelque chose de très important pour moi. J'ai joué de la guitare pendant un an mais cet instrument ne me convenait pas vraiment. Je me suis un peu éloigné du milieu de la musique par manque de temps et de persévération puis j'ai choisi l'option musique en arrivant en seconde. Cela m'a redonné une envie de jouer, de créer ou encore de pouvoir montrer mes capacités. J'ai récupéré un vieux synthé qui appartenait à ma mère et ce fut une révélation. Pouvoir jouer et sentir les regards emportés par la musique, il n'y a rien de plus beau. J'ai réussi à me concentrer sur cette passion à 100% et aujourd'hui je peux dire que cela a été une de plus grandes persévérations. J'en suis particulièrement fier.</p>
+            <p>J'ai toujours aimé la musique, c'est une grande partie de ma vie. J'adore l'effet qu'elle peut avoir sur l'homme, sur ses sentiments ou ses décisions. La musique peut être entrainante comme incroyablement triste et c'est cette diversité des genres et d'émotions qui en font quelque chose de très important pour moi. J'ai joué de la guitare pendant un an mais cet instrument ne me convenait pas vraiment. Je me suis un peu éloigné du milieu de la musique par manque de temps et de persévérance puis j'ai choisi l'option musique en arrivant en seconde. Cela m'a redonné une envie de jouer, de créer ou encore de pouvoir montrer mes capacités. J'ai récupéré un vieux synthé qui appartenait à ma mère et ce fut une révélation. Pouvoir jouer et sentir les regards emportés par la musique, il n'y a rien de plus beau. J'ai réussi à me concentrer sur cette passion à 100% et aujourd'hui je peux dire que cela a été une de plus grandes fiertés.</p>
 
         </div>
 
@@ -44,7 +55,7 @@ include "FichiersCommuns/header.php";
 
         </div>
     </div>
-    
+
 </div>
 
 <?php

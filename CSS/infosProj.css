@@ -16,6 +16,12 @@
     background-image: repeating-linear-gradient(45deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(135deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(256,7%,84%),hsl(256,7%,84%));
 }
 
+.Iron{
+    color: #55c9f6;
+    border: 3px solid #55c9f6;
+    background-color: #fefdf0;
+}
+
 .contenuInfosProj{
     min-height: 85vh;
     width: 80%;
@@ -53,7 +59,7 @@
 }
 
 #flecheRetour:hover{
-   transform: rotate(360deg);
+    transform: rotate(360deg);
 }
 
 .infosProj{
@@ -132,4 +138,33 @@
     cursor: pointer;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 900px){
+
+    .contenuInfosProj{
+        padding-top: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content max-content max-content;
+
+    }
+
+    .images{
+        padding: 10px 15px;
+        margin-top: 1cm;
+        border-right: 5px solid #ffe7d4;
+    }
+
+    .contenuInfosProj h1{
+        font-size: 1.4em;
+    }
+
+    #flecheRetour{
+        left: -20vw;
+        width: 50px;
+        height: 50px;
+    }
+
 }

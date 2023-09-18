@@ -2,20 +2,25 @@
 $imgETC = "images/projets/ETC/";
 $imgBS = "images/projets/BestStudents/";
 $imgCarottos = "images/projets/Carottos/";
+$imgIron = "images/projets/Iron/";
 
 $ETC = ["nom"=>"ETC", "annee"=>2023, "logo"=>"images/projets/ETC/logo.png", "descr"=>"ETC (Enroule Ton câble) est une micro entreprise 
-crée par le BTS GPME du lycée Louis Pergaud. Ce site sert de vitrine pour leur produit et permet de présenter l'envers du décor et les collaborateurs.",
-    "img"=>[$imgETC."index2.PNG", $imgETC."produit.PNG", $imgETC."quiSommesNous.PNG", $imgETC."contact.PNG"], "lien"=>"https://enrouletoncable.fr"];
+    crée par le BTS GPME du lycée Louis Pergaud. Ce site sert de vitrine pour leur produit et permet de présenter l'entreprise et les collaborateurs.",
+    "img"=>[$imgETC."index2.png", $imgETC."produit.png", $imgETC."quiSommesNous.png", $imgETC."contact.png"], "lien"=>"https://enrouletoncable.fr"];
 
 $BestStudents = ["nom"=>"BestStudents", "annee"=>2022, "logo"=>$imgBS."logo.png", "descr"=>"BestStudents est un projet crée au cours 
-de ma première année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves 
-par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
-    "img"=>[$imgBS."index2.png", $imgBS."ajoutEtudiant.png" ,$imgBS."gestionDemandes.PNG", $imgBS."contact.png"]];
+    de ma première année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves 
+    par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
+    "img"=>[$imgBS."index2.png", $imgBS."ajoutEtudiant.png" ,$imgBS."gestionDemandes.png", $imgBS."contact.png"]];
 
 $Carottos = ["nom"=>"Carottos", "annee"=>2023, "logo"=>$imgCarottos."logo.png", "descr"=>"Carottos est une entreprise crée de toute pièce 
-afin de s'entrainer à gérer des sessions, des paniers et des commandes le tout enregistré dans une base de donnée. J'ai commencer à approcher pour 
-la première fois Javascript grâce à ce projet.",
+    afin de s'entrainer à gérer des sessions, des paniers et des commandes le tout enregistré dans une base de donnée. J'ai commencer à approcher pour 
+    la première fois Javascript grâce à ce projet.",
     "img"=>[$imgCarottos."index2.png", $imgCarottos."produit.PNG", $imgCarottos."panier.PNG", $imgCarottos."validationPanier.png"]];
+
+$Iron = ["nom"=>"Iron", "annee"=>2023, "logo"=>$imgIron."logo.png", "descr"=>"Iron est un logiciel de suivi des vérifications des équipements de sécurité de l'entreprise WALTEFAUGLE. Il est codé sous WINDEV lors de mon stage de fin de première année.
+    Le logiciel permet d’accéder aux fiches des équipements stockées sur le réseau et envoie un mail 2 semaines avant la prochaine vérification.",
+    "img"=>[$imgIron."menu.png", $imgIron."fichesVie.png", $imgIron."materiels.png", $imgIron."personnel.png"]];
 
 $projet = $_GET['projet'];
 if ($projet == "Carottos"){
@@ -24,6 +29,8 @@ if ($projet == "Carottos"){
     $actuel = $ETC;
 }elseif ($projet == "BestStudents"){
     $actuel = $BestStudents;
+}elseif ($projet == "Iron"){
+    $actuel = $Iron;
 }
 
 
@@ -44,6 +51,17 @@ if ($projet == "Carottos"){
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <title>Projet : <?= $actuel["nom"] ?></title>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DGNMBFFVZ2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DGNMBFFVZ2');
+</script>
+
 <body>
 <?php
 include "FichiersCommuns/header.php";
@@ -68,11 +86,11 @@ include "FichiersCommuns/header.php";
         <div class="gridImages">
             <?php
             foreach ($actuel["img"] as $image){
-            ?>
+                ?>
 
                 <img src="<?= $image ?>" alt="Image du site" onclick="document.getElementById('imgPrincipale').src = '<?= $image ?>'">
 
-            <?php
+                <?php
             }
             ?>
         </div>
@@ -84,3 +102,4 @@ include "FichiersCommuns/footer.php";
 ?>
 </body>
 </html>
+     

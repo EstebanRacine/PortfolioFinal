@@ -115,7 +115,7 @@ footer p{
     color: #77c2b8;
 }
 
-@media screen and (max-width: 800px) and (min-height: 760px){
+@media screen and (max-width: 800px){
     header{
         height: 15vh;
         display: flex;
@@ -152,6 +152,10 @@ footer p{
         width: 75vw;
         align-self: center;
         justify-self: center;
+    }
+
+    nav img{
+        height: 13vh;
     }
 
 }
