@@ -7,18 +7,13 @@ https://css-tricks.com/snippets/css/typewriter-effect/
     to { width: 100% }
 }
 
-@keyframes barreCligno {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-}
-
 @keyframes upDown {
     30%{
         transform: translateY(20px);
     }
 
-    80%{
-        transform: translateY(0);
+    60%{
+        transform: translateY(0px);
     }
 
 }
@@ -54,14 +49,12 @@ https://css-tricks.com/snippets/css/typewriter-effect/
     width: max-content;
     text-align: center;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #3e726a; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.3em; /* Adjust as needed */
 
     animation:
-            typing 2.5s steps(40, end) 0s ,
-            barreCligno .5s step-end  0s 5 forwards;
+            typing 0.55s steps(40, end) 0.2s;
 }
 
 #h1Middle{
@@ -69,14 +62,12 @@ https://css-tricks.com/snippets/css/typewriter-effect/
     font-size: 2.5em;
     text-align: center;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid transparent; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.2em; /* Adjust as needed */
 
     animation:
-            typing 2.5s steps(40, end) 2.5s forwards,
-            barreCligno .5s step-end  2.5s 5 forwards;
+            typing 0.4s steps(40, end) 0.35s forwards;
 }
 
 #h1End{
@@ -84,14 +75,12 @@ https://css-tricks.com/snippets/css/typewriter-effect/
     font-size: 2.5em;
     text-align: center;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid transparent; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto 35vh; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.2em; /* Adjust as needed */
 
     animation:
-            typing 2.5s steps(40, end) 5s forwards,
-            barreCligno .5s step-end  5s 5 forwards;
+            typing 0.5s steps(40, end) 0.25s forwards;
 }
 
 .pres1 i{
@@ -100,8 +89,8 @@ https://css-tricks.com/snippets/css/typewriter-effect/
     width: 100%;
     cursor: pointer;
     text-align: center;
-    animation: upDown 5s infinite ease-in-out;
-    bottom: 35px;
+    animation: upDown 3.5s infinite ease-in-out;
+    bottom: 30px;
 }
 
 
