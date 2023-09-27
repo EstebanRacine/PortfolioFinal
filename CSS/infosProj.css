@@ -88,6 +88,22 @@
     text-indent: 1cm;
 }
 
+.imagesCompetences{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: max-content;
+    flex-wrap: wrap;
+}
+
+.imagesCompetences img{
+    height: 10vh;
+    width: 10vh;
+    object-fit: contain;
+    margin-top: 20px;
+}
 
 #lienExterne{
     padding: 7px 15px;

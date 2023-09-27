@@ -4,23 +4,52 @@ $imgBS = "images/projets/BestStudents/";
 $imgCarottos = "images/projets/Carottos/";
 $imgIron = "images/projets/Iron/";
 
-$ETC = ["nom"=>"ETC", "annee"=>2023, "logo"=>"images/projets/ETC/logo.png", "descr"=>"ETC (Enroule Ton câble) est une micro entreprise 
-    crée par le BTS GPME du lycée Louis Pergaud. Ce site sert de vitrine pour leur produit et permet de présenter l'entreprise et les collaborateurs.",
-    "img"=>[$imgETC."index2.png", $imgETC."produit.png", $imgETC."quiSommesNous.png", $imgETC."contact.png"], "lien"=>"https://enrouletoncable.fr"];
+///COMPETENCES
+/// HTML = HTML
+/// CSS = CSS
+/// JAVASCRIPT = JS
+/// SYMFONY = SYM
+/// PHP = PHP
+/// WINDEV = WD
 
-$BestStudents = ["nom"=>"BestStudents", "annee"=>2022, "logo"=>$imgBS."logo.png", "descr"=>"BestStudents est un projet crée au cours 
+$ETC = ["nom"=>"ETC",
+    "annee"=>2023,
+    "logo"=>"images/projets/ETC/logo.png",
+    "descr"=>"ETC (Enroule Ton câble) est une micro entreprise 
+    crée par le BTS GPME du lycée Louis Pergaud. Ce site sert de vitrine pour leur produit et permet de présenter l'entreprise et les collaborateurs.",
+    "img"=>[$imgETC."index2.png", $imgETC."produit.png", $imgETC."quiSommesNous.png", $imgETC."contact.png"],
+    "lien"=>"https://enrouletoncable.fr",
+    "competences"=>["HTML", "CSS", "JS"]
+];
+
+$BestStudents = ["nom"=>"BestStudents",
+    "annee"=>2022,
+    "logo"=>$imgBS."logo.png",
+    "descr"=>"BestStudents est un projet crée au cours 
     de ma première année de BTS. Le principe était de faire une base de donnée répertoriant des élèves. Nous pouvons y rechercher les élèves 
     par classe ou encore faire des demandes via formulaire qui seront ensuite gérées par un administrateur.",
-    "img"=>[$imgBS."index2.png", $imgBS."ajoutEtudiant.png" ,$imgBS."gestionDemandes.png", $imgBS."contact.png"]];
+    "img"=>[$imgBS."index2.png", $imgBS."ajoutEtudiant.png" ,$imgBS."gestionDemandes.png", $imgBS."contact.png"],
+    "competences" => ["HTML", "CSS", "PHP"]
+];
 
-$Carottos = ["nom"=>"Carottos", "annee"=>2023, "logo"=>$imgCarottos."logo.png", "descr"=>"Carottos est une entreprise crée de toute pièce 
+$Carottos = ["nom"=>"Carottos",
+    "annee"=>2023,
+    "logo"=>$imgCarottos."logo.png",
+    "descr"=>"Carottos est une entreprise crée de toute pièce 
     afin de s'entrainer à gérer des sessions, des paniers et des commandes le tout enregistré dans une base de donnée. J'ai commencer à approcher pour 
     la première fois Javascript grâce à ce projet.",
-    "img"=>[$imgCarottos."index2.png", $imgCarottos."produit.PNG", $imgCarottos."panier.PNG", $imgCarottos."validationPanier.png"]];
+    "img"=>[$imgCarottos."index2.png", $imgCarottos."produit.PNG", $imgCarottos."panier.PNG", $imgCarottos."validationPanier.png"],
+    "competences"=>["HTML", "CSS", "PHP", "JS"]
+];
 
-$Iron = ["nom"=>"Iron", "annee"=>2023, "logo"=>$imgIron."logo.png", "descr"=>"Iron est un logiciel de suivi des vérifications des équipements de sécurité de l'entreprise WALTEFAUGLE. Il est codé sous WINDEV lors de mon stage de fin de première année.
+$Iron = ["nom"=>"Iron",
+    "annee"=>2023,
+    "logo"=>$imgIron."logo.png",
+    "descr"=>"Iron est un logiciel de suivi des vérifications des équipements de sécurité de l'entreprise WALTEFAUGLE. Il est codé sous WINDEV lors de mon stage de fin de première année.
     Le logiciel permet d’accéder aux fiches des équipements stockées sur le réseau et envoie un mail 2 semaines avant la prochaine vérification.",
-    "img"=>[$imgIron."menu.png", $imgIron."fichesVie.png", $imgIron."materiels.png", $imgIron."personnel.png"]];
+    "img"=>[$imgIron."menu.png", $imgIron."fichesVie.png", $imgIron."materiels.png", $imgIron."personnel.png"],
+    "competences"=>["WD"]
+];
 
 $projet = $_GET['projet'];
 if ($projet == "Carottos"){
@@ -80,6 +109,32 @@ include "FichiersCommuns/header.php";
             echo "<p id='nonPub'>Projet non publié</p>";
         }
         ?>
+        <div class="imagesCompetences">
+            <?php
+            foreach ($actuel["competences"] as $comp){
+                switch ($comp){
+                    case "HTML":
+                        echo "<img src='images/logosCompetences/html.svg' alt='Logo d HTML'>";
+                        break;
+                    case "CSS":
+                        echo "<img src='images/logosCompetences/css.svg' alt='Logo de CSS'>";
+                        break;
+                    case "JS":
+                        echo "<img src='images/logosCompetences/javascript.svg' alt='Logo de Javascript'>";
+                        break;
+                    case "PHP":
+                        echo "<img src='images/logosCompetences/php.svg' alt='Logo de PHP'>";
+                        break;
+                    case "SYM":
+                        echo "<img src='images/logosCompetences/symfony.svg' alt='Logo de Symfony'>";
+                        break;
+                    case "WD":
+                        echo "<img src='images/logosCompetences/windev.svg' alt='Logo de Windev'>";
+                        break;
+                }
+            }
+            ?>
+        </div>
     </div>
     <div class="images">
         <img id="imgPrincipale" src="<?= $actuel["img"][0] ?>" alt="Image principale">
