@@ -1,0 +1,20 @@
+
+.contenuVeille{
+    padding-top: 15vh;
+    min-height: 85vh;
+    color: #ffe7d4;
+    font-family: Montserrat, sans-serif;
+}
+
+.contenuVeille h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1160px){
+    .contenuVeille{
+        padding-top: 0;
+    }
+}
