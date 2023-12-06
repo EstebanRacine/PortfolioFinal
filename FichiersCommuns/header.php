@@ -14,8 +14,10 @@ if ($file == "index.php"){
     $passions = "underline";
 }elseif ($file == "cv.php"){
     $cv = "underline";
-}elseif ($file=="contact.php"){
+}elseif ($file=="contact.php") {
     $contact = "underline";
+}elseif($file=="veille.php"){
+    $veille = "underline";
 }elseif ($file == "projets.php"){
     $projets = "underline";
 }
@@ -37,6 +39,7 @@ if ($file == "index.php"){
         <a href="cv.php" class="<?= $cv ?>">Mon CV</a>
         <a href="projets.php" class="<?= $projets ?>">Mes projets</a>
         <a href="passions.php" class="<?= $passions ?>">Mes passions</a>
+        <a href="veille.php" class="<?= $veille ?>">Veille Technologique</a>
         <a href="contact.php" class="<?= $contact ?>">Contact</a>
     </nav>
     <i class="fa-solid fa-bars" id="iconeMenu" onclick="apparitionMenu()"></i>

@@ -128,6 +128,12 @@ https://css-tricks.com/snippets/css/typewriter-effect/
     text-indent: 1cm;
 }
 
+@media screen and (max-width: 1160px){
+    .contenuIndex{
+        padding-top: 0;
+    }
+}
+
 @media screen and (max-width: 800px){
 
     .infosPerso{
@@ -137,10 +143,6 @@ https://css-tricks.com/snippets/css/typewriter-effect/
 
     .infosPerso p{
         margin: 50px auto;
-    }
-
-    .contenuIndex{
-        padding-top: 0;
     }
 }
 

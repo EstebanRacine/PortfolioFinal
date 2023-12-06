@@ -61,7 +61,7 @@ include "FichiersCommuns/header.php";
             <ul>
                 <div class="ligne"><i class="fa-solid fa-phone"></i> <li> 06 31 68 70 17</li></div>
                 <div class="ligne"><i class="fa-solid fa-envelope"></i> <li> esteban.racineecole@gmail.com</li></div>
-                <div class="ligne"><i class="fa-solid fa-house"></i><li id="adresseCV"> 44 rue de Salans <br> 39700 FRAISANS</li></div>
+                <div class="ligne"><i class="fa-solid fa-house"></i><li id="adresseCV"> 13 rue du Muguet <br> 25000 BESANÇON</li></div>
             </ul>
         </div>
     </div>
@@ -105,10 +105,9 @@ include "FichiersCommuns/header.php";
             <h1>COMPÉTENCES</h1>
             <div class="contenuBloc">
                 <ul>
-                    <li>Développement de programmes en Python et en PHP</li>
-                    <li>Création de site web et HTML / CSS / JAVASCRIPT</li>
-                    <li>Niveau de langue B1 en Anglais</li>
-                    <li>Niveau de langue B1 en Allemand</li>
+                    <li>Développement de programmes en Python, en PHP et en Windev</li>
+                    <li>Création de site web avec HTML / CSS / Javascript / Wordpress / Jquery / Symfony</li>
+                    <li>Gestion de base de données (SQL)</li>
                 </ul>
             </div>
         </div>

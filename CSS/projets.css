@@ -236,10 +236,13 @@ article{
 
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1160px){
     .contenuProjet{
         padding-top: 2.5vh;
     }
+}
+
+@media screen and (max-width: 800px){
 
     #BestStudents{
         background-image: url("../images/projets/BestStudents/indexPhone.PNG");

@@ -27,7 +27,7 @@ nav{
     height: 15vh;
     display: grid;
     grid-template-rows: 100%;
-    grid-template-columns: 20vw repeat(5, 1fr);
+    grid-template-columns: 20vw repeat(4, 1fr) 1.5fr 1fr;
     background-color: #3e726a;
     font-family: 'Montserrat', sans-serif;
     position: fixed;
@@ -49,6 +49,8 @@ nav a{
     font-size: 1.4em;
     transition: 0.5s scale;
     font-weight: bold;
+    text-align: center;
+    padding: 0 10px;
 }
 
 #navImg{
@@ -115,7 +117,7 @@ footer p{
     color: #77c2b8;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1160px){
     header{
         height: 15vh;
         display: flex;
@@ -143,7 +145,7 @@ footer p{
         margin-top: -100vh;
         width: 100vw;
         position: absolute;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 1fr);
         grid-template-columns: 1fr;
         transition: all 0.5s;
     }

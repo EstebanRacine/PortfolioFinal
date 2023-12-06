@@ -156,12 +156,15 @@
     border-bottom-right-radius: 10px;
 }
 
-
+@media screen and (max-width: 1160px){
+    .contenuInfosProj{
+        padding-top: 0;
+    }
+}
 
 @media screen and (max-width: 900px){
 
     .contenuInfosProj{
-        padding-top: 0;
         grid-template-columns: 1fr;
         grid-template-rows: max-content max-content max-content;
 
