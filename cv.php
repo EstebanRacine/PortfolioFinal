@@ -42,8 +42,8 @@ include "FichiersCommuns/header.php";
         </div>
         <div class="descriptionID">
             <h3>PROFIL PERSONNEL</h3>
-            <p>Je suis actuellement un étudiant de 19 ans en 1ère année de BTS SIO (Services Informatiques aux Organisations) option SLAM
-                au lycée Louis Pergaud de Besançon. Je souhaite devenir développeur web et cherche à m'améliorer continuellement. Je suis actuellement à la recherche d'une alternance pour l'année 2023/2024.</p>
+            <p>Je suis actuellement un étudiant de 20 ans en 2eme année de BTS SIO (Services Informatiques aux Organisations) option SLAM
+                au lycée Louis Pergaud de Besançon. Je souhaite devenir développeur web et cherche à m'améliorer continuellement.</p>
         </div>
         <div class="qualites">
             <h3>QUALITÉS</h3>
@@ -70,18 +70,24 @@ include "FichiersCommuns/header.php";
             <h1>EXPÉRIENCE PROFESSIONNELLE</h1>
 
             <div class="contenuBloc" id="blocHautExp">
+                <h2>Alternance</h2>
+                <h3>à FONDATION PLURIEL (2023 - actuel)</h3>
+                <p> - Alternance lors de ma deuxième année de BTS SIO. Mes missions principales sont des créations de sites web internes à l'entreprise.</p>
+            </div>
+
+            <div class="contenuBloc" id="blocHautExp">
                 <h2>Création d'outils internes</h2>
                 <h3>à WALTEFAUGLE (2023)</h3>
                 <p> - Stage d'un mois suivi d'un second en intérim dans une entreprise de construction de charpente métallique pour développer des logiciels internes
                     sous Windev. </p>
             </div>
 
-            <div class="contenuBloc" id="blocHautExp">
-                <h2>Stage d'observation</h2>
-                <h3>à INFOFIL (2019)</h3>
-                <p> - Stage de 3 jours dans une entreprise de développement de logiciel. J'y ai découvert le secteur
-                    informatique. J'ai commencé à coder de petits logiciels à sa suite.</p>
-            </div>
+<!--            <div class="contenuBloc" id="blocHautExp">-->
+<!--                <h2>Stage d'observation</h2>-->
+<!--                <h3>à INFOFIL (2019)</h3>-->
+<!--                <p> - Stage de 3 jours dans une entreprise de développement de logiciel. J'y ai découvert le secteur-->
+<!--                    informatique. J'ai commencé à coder de petits logiciels à sa suite.</p>-->
+<!--            </div>-->
 
         </div>
         <div class="blocInfosPlus">
