@@ -37,13 +37,14 @@ include "FichiersCommuns/header.php";
         <div class="imgID">
             <img src="images/cv/imgCV.jpg" alt="Image d'Esteban RACINE">
             <h1>ESTEBAN <br> RACINE</h1>
-            <h2 id="metier">ÉTUDIANT EN BTS SIO</h2>
-            <h2 id="descrMetier">(SERVICES INFORMATIQUES AUX ORGANISATIONS)</h2>
+            <h2 class="job">Alternant développeur à fondation pluriel</h2>
+            <h3 id="metier">ÉTUDIANT EN BTS SIO</h3>
+            <h3 id="descrMetier">(SERVICES INFORMATIQUES AUX ORGANISATIONS)</h3>
         </div>
         <div class="descriptionID">
             <h3>PROFIL PERSONNEL</h3>
-            <p>Je suis actuellement un étudiant de 20 ans en 2eme année de BTS SIO (Services Informatiques aux Organisations) option SLAM
-                au lycée Louis Pergaud de Besançon. Je souhaite devenir développeur web et cherche à m'améliorer continuellement.</p>
+            <p>   Je suis actuellement un étudiant-alternant de 20 ans en 2ème année de BTS SIO (Services Informatiques
+                aux Organisations) option SLAM au Lycée Louis Pergaud de Besançon. Je travaille en temps que développeur à la Fondation Pluriel et cherche à m'améliorer continuellement.</p>
         </div>
         <div class="qualites">
             <h3>QUALITÉS</h3>
@@ -71,13 +72,13 @@ include "FichiersCommuns/header.php";
 
             <div class="contenuBloc" id="blocHautExp">
                 <h2>Alternance</h2>
-                <h3>à FONDATION PLURIEL (2023 - actuel)</h3>
+                <h3>à FONDATION PLURIEL (octobre 2023 - actuel)</h3>
                 <p> - Alternance lors de ma deuxième année de BTS SIO. Mes missions principales sont des créations de sites web internes à l'entreprise.</p>
             </div>
 
             <div class="contenuBloc" id="blocHautExp">
                 <h2>Création d'outils internes</h2>
-                <h3>à WALTEFAUGLE (2023)</h3>
+                <h3>à WALTEFAUGLE (juin 2023 - août 2023)</h3>
                 <p> - Stage d'un mois suivi d'un second en intérim dans une entreprise de construction de charpente métallique pour développer des logiciels internes
                     sous Windev. </p>
             </div>
@@ -93,14 +94,16 @@ include "FichiersCommuns/header.php";
         <div class="blocInfosPlus">
             <h1>FORMATION ET DIPLÔMES</h1>
             <div class="contenuBloc" id="blocHautForm">
+                <h2>Lycée Louis Pergaud</h2>
+                <h3>BTS SIO Option SLAM (2024) - En cours</h3>
+                <p> - Services Informatiques aux Organisations Option Solutions
+                    Logicielles et Applications Métiers</p>
+                <p> - Délégué Titulaire</p>
+            </div>
+            <div class="contenuBloc">
                 <h2>Lycée Charles Nodier</h2>
                 <h3>Baccalauréat Général (2022) - Mention "Bien"</h3>
                 <p> - Spécialités "Mathématiques" et "Numérique et Sciences Informatiques" / Ecodélégué</p>
-            </div>
-            <div class="contenuBloc">
-                <h2>Collège Gustave Eiffel</h2>
-                <h3>Brevet des collèges (2019) - Mention "Très Bien"</h3>
-                <p>Surveillant du foyer des élèves</p>
             </div>
             <div class="contenuBloc">
                 <h2>Permis B</h2>
@@ -112,7 +115,7 @@ include "FichiersCommuns/header.php";
             <div class="contenuBloc">
                 <ul>
                     <li>Développement de programmes en Python, en PHP et en Windev</li>
-                    <li>Création de site web avec HTML / CSS / Javascript / Wordpress / Jquery / Symfony</li>
+                    <li>Création de site web avec HTML / CSS / Javascript / Jquery / Symfony</li>
                     <li>Gestion de base de données (SQL)</li>
                 </ul>
             </div>

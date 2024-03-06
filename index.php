@@ -55,14 +55,14 @@ include "FichiersCommuns/header.php"
             <img src="images/index/moi2.jpg" alt="Image d'Esteban Racine">
             <p>
                 Je suis Esteban RACINE, étudiant en BTS SIO au lycée Louis Pergaud. Je me suis toujours
-                interessé au fonctionnement des objets. À leurs conceptions, à leurs utilisations ou encore
+                intéressé au fonctionnement des objets. À leurs conceptions, à leurs utilisations ou encore
                 à leurs utilisateurs. J'ai adoré comprendre le fonctionnement de la machine à vapeur ou
-                analyser le type de personnes qui vont acheter le dernier Iphone. Cet interêt pour la nouveauté
-                m'a amené vers le milieu de l'informatique. Je connaissais evidemment le coté exterieur et
-                visuel que nous cotoyons tous chaque jour mais depuis mon année de 1ère j'ai découvert
-                l'interieur, le développement plus particulièrement. Comprendre comment un site internet ou
+                analyser le type de personne qui vont acheter le dernier Iphone. Cet intérêt pour la nouveauté
+                m'a amené vers le milieu de l'informatique. Je connaissais évidemment le côté extérieur et
+                visuel que nous côtoyons tous chaque jour mais depuis mon année de 1re j'ai découvert
+                l'intérieur, le développement plus particulièrement. Comprendre comment un site internet ou
                 une application mobile fonctionne me fascine, c'est pourquoi je me suis dirigé dans ce milieu
-                à la fois intéressant et important au vu du nombre d'utilisateur du net aujourd'hui.
+                à la fois intéressant et important au vu du nombre d'utilisateurs du net aujourd'hui.
             </p>
         </div>
     </div>
